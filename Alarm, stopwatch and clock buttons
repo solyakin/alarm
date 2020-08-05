@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+    <link rel="stylesheet" href="/alarm.css">
+</head>
+<body>
+    <!--<i class="far fa-alarm-clock"></i> <i class="fa fa-clock-o"></i> -->
+    <div id="options">
+        <div class="clock__btn">
+            <button class="active__button">
+             <img src="/img/clock.svg" alt="clock" width="40px" height="auto" class = "style">
+            </button> 
+         </div>
+         <div class="alarm__btn">
+            <button class="active__button">
+             <img src="/img/alarm-clock.svg" alt="alarm-clock" width="40px" height="auto">
+            </button> 
+         </div>
+         <div class="timer__btn">
+            <button class="active__button">
+             <img src="/img/timer.svg" alt="timer" width="40px" height="auto">
+            </button> 
+         </div>
+    </div>
+    
+    
+</body>
+</html>
