@@ -1,0 +1,88 @@
+@import "./mixins";
+
+body {
+    @include bg;
+}
+p, button {
+    font-weight: bold;
+}
+/***** TEXT SECTION *****/
+
+/** ClOCK  SECTION**/
+.clock-text {
+  @include section-set;
+  top: 103vh;
+  &__h2 {
+      margin-bottom: 1rem;
+  }
+  &__time {
+      margin-bottom: .5rem;
+  }
+
+}
+
+/** ALARM  SECTION**/
+.alarm-text {
+  @include section-set;
+  font-weight: bold;
+  top: 118vh;
+  margin-top: 2rem;
+
+  &__time {
+      margin-bottom: .5rem;
+  }
+
+  &__date {
+    margin-bottom: 1.5rem;
+}
+
+.alarm-set {
+    display: inline-block;
+    background-color: rgb(23, 209, 184);
+    padding: 1rem 2.6rem;
+    border-radius: 5px;
+    margin-bottom: .7rem;
+    &__box {
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid black;
+        width: 15rem;
+        padding: .5rem 0;
+    }
+    &__p {
+        margin: .5rem 0;
+    }
+    &__countdown {
+        margin: .5rem 0;
+    }
+    &__btn {
+      @include btn;
+    }
+}
+
+.set-alarm {
+    margin: 1rem 0 .5rem;
+    @include btn;
+}
+
+  .alarm-edit {
+      border: 1px solid black;
+      width: 30rem;
+      margin-left: auto;
+        margin-right: auto;
+
+    &__hours-minutes {
+        display: flex;
+      .edit-hours {
+          flex: 0 0 50%;
+      }
+      .edit-minutes {
+        flex: 0 0 50%;
+      }
+    }
+
+    &__btn {
+        @include btn;
+    }
+  }
+}

@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 
@@ -13,6 +14,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+  
 }
 
 .clock{
@@ -179,16 +181,5 @@ body{
     width: 2px;
     height: 40%;
 }
-
-
-/***** TEXT SECTION *****/
-
-.section-text {
- width: 100vw;
- position: absolute;
- text-align: center;
- top: 103vh;   
-}
-
 
 
