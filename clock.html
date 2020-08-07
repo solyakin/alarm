@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title>Alarm Clock</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="clock.css">
@@ -12,149 +12,108 @@
 </head>
 
 <body>
-
-    <div class="clock">
-        <div class="num num1">
-            <div>01</div>
-        </div>
-        <div class="num num2">
-            <div>02</div>
-        </div>
-        <div class="num num3">
-            <div>03</div>
-        </div>
-        <div class="num num4">
-            <div>04</div>
-        </div>
-        <div class="num num5">
-            <div>05</div>
-        </div>
-        <div class="num num6">
-            <div>06</div>
-        </div>
-        <div class="num num7">
-            <div>07</div>
-        </div>
-        <div class="num num8">
-            <div>08</div>
-        </div>
-        <div class="num num9">
-            <div>09</div>
-        </div>
-        <div class="num num10">
-            <div>10</div>
-        </div>
-        <div class="num num11">
-            <div>11</div>
-        </div>
-        <div class="num num12">
-            <div>12</div>
-        </div>
-
-        <div class="hand" id="hr">
-            <div class="hr"></div>
-        </div>
-        <div class="hand" id="mn">
-            <div class="mn"></div>
-        </div>
-        <div class="hand" id="sc">
-            <div class="sc"></div>
-        </div>
+    <div id="blur">
+        <header>
+            <h1>ALARM</h1>
+        </header>
+        <section>
+            <div class="clock">
+                <div class="num num1">
+                    <div>01</div>
+                </div>
+                <div class="num num2">
+                    <div>02</div>
+                </div>
+                <div class="num num3">
+                    <div>03</div>
+                </div>
+                <div class="num num4">
+                    <div>04</div>
+                </div>
+                <div class="num num5">
+                    <div>05</div>
+                </div>
+                <div class="num num6">
+                    <div>06</div>
+                </div>
+                <div class="num num7">
+                    <div>07</div>
+                </div>
+                <div class="num num8">
+                    <div>08</div>
+                </div>
+                <div class="num num9">
+                    <div>09</div>
+                </div>
+                <div class="num num10">
+                    <div>10</div>
+                </div>
+                <div class="num num11">
+                    <div>11</div>
+                </div>
+                <div class="num num12">
+                    <div>12</div>
+                </div>
+    
+                <div class="hand" id="hr">
+                    <div class="hr"></div>
+                </div>
+                <div class="hand" id="mn">
+                    <div class="mn"></div>
+                </div>
+                <div class="hand" id="sc">
+                    <div class="sc"></div>
+                </div>
+            </div>
+        </section>
+        <!-- WHOLE PAGE TEXT -->
+    
+        <!-- CLOCK TEXT SECTION     -->
+        <section class="clock-text">
+            <h2 class="clock-text__h2">
+                West African Time
+            </h2>
+    
+            <p class="clock-text__time">
+                <span class="clock-text__hour">3</span> :
+                <span class="clock-text__minutes">20</span> :
+                <span class="clock-text__seconds">20</span>
+                <span class="clock-text__day-zone">pm</span>
+            </p>
+    
+            <p class="clock-text__date">
+                <span class="clock-text__day">Tue</span> -
+                <span class="clock-text__month">Aug</span>
+                <span class="clock-text__day-no">14</span>,
+                <span class="clock-text__year">2020</span>
+            </p>
+    
+            <div class="addbtn" id="addbtn">
+                <img id="img" src="icons8-plus.svg">
+            </div>
+        </section>
+    
+        <section id="alarm">
+            
+        </section>
+    
+        <section id="time">
+            <div class="timeDiv">
+                <h1 id="timer"></h1>
+                <select name="" id="hours"></select>
+                <select name="" id="minutes"></select>
+                <select name="" id="seconds"></select>
+                <select name="" id="ampm">
+                    <option value="AM">AM</option>
+                    <option value="PM">PM</option>
+                </select>
+            </div>
+            <div>
+                <button id="setalarm">Set Alarm</button>
+            </div>
+        </section>
     </div>
-
-    <!-- WHOLE PAGE TEXT -->
-
-    <!-- CLOCK TEXT SECTION     -->
-    <section class="clock-text">
-        <h2 class="clock-text__h2">
-            West African Time
-        </h2>
-
-        <p class="clock-text__time">
-            <span class="clock-text__hour">3</span> :
-            <span class="clock-text__minutes">20</span> :
-            <span class="clock-text__seconds">20</span>
-            <span class="clock-text__day-zone">pm</span>
-        </p>
-
-        <p class="clock-text__date">
-            <span class="clock-text__day">Tue</span> -
-            <span class="clock-text__month">Aug</span>
-            <span class="clock-text__day-no">14</span>,
-            <span class="clock-text__year">2020</span>
-        </p>
-    </section>
-
-    <!-- ALARM TEXT SECTION -->
-    <section class="alarm-text">
-        <p class="alarm-text__time">
-            <span class="alarm-text__hour">3</span> :
-            <span class="alarm-text__minutes">20</span> :
-            <span class="alarm-text__seconds">20</span>
-            <span class="alarm-text__day-zone">pm</span>
-        </p>
-
-        <p class="alarm-text__date">
-            <span class="alarm-text__day">Tue</span> -
-            <span class="alarm-text__month">Aug</span>
-            <span class="alarm-text__day-no">14</span> ,
-            <span class="alarm-text__year">2020</span>
-        </p>
-
-        <span class="alarm-set">Set Alarm</span>
-        <div class="alarm-set__box">
-            <p class="alarm-set__p">Alarm</p>
-            <div class="alarm-set__fixed-alarm">
-                <span class="alarm-set__hour">3</span> :
-                <span class="alarm-set__minutes">20</span> :
-                <span class="alarm-set__seconds">20</span>
-                <span class="alarm-set__day-zone">pm</span>
-            </div>
-            <div class="alarm-set__countdown">
-                <span class="countdown__hour">3</span> :
-                <span class="countdown__minutes">20</span> :
-                <span class="countdown__seconds">20</span>
-            </div>
-
-            <button class="alarm-set__btn">Stop Alarm</button>
-        </div>
-
-        <button class="set-alarm">Set Alarm Button</button>
-        <div class="alarm-edit">
-            <p class="alarm-edit__p">Edit Alarm <span class="X">&Chi;</span></p>
-
-            <div class="alarm-edit__hours-minutes">
-                <div class="edit-hours">
-                    <label for="hours">Hours</label>
-                    <input type="number" name="hour" id="hour">
-                </div>
-                <div class="edit-minutes">
-                    <label for="minutes">Minutes</label>
-                    <input type="number" name="minutes" id="minutes">
-                </div>
-            </div>
-
-            <p class="alarm-edit__sounds">sounds</p>
-            <p class="alarm-edit__sound-choose">Bells 
-                <span class="arrow-down">&dArr;</span>
-                <span class="arrow-right">&rArr;</span>
-            </p> 
-
-            <label for="repeat">Repeat Sound</label>
-            <input type="checkbox" name="repeat" id="repeat">
-
-            <label for="title">Title</label>
-            <input type="text" name="title" id="title">
-
-            <div class="alarm-edit__buttons">
-                <button class="alarm-edit__btn">Test</button>
-                <button class="alarm-edit__btn">Cancel</button>
-                <button class="alarm-edit__btn">Start</button>
-            </div>
-
-        </div>
-    </section>
-
+   
     <script src="index.js"></script>
 </body>
 

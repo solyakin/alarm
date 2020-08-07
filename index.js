@@ -16,3 +16,10 @@ function updateClock(){
 }
 
 updateClock();
+
+const btnPlus = document.getElementById('img');
+
+btnPlus.addEventListener('click', function(){
+  var time = document.getElementById("time");
+  time.classList.toggle("active");
+})
