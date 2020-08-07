@@ -9,7 +9,7 @@ Clone repo into local repo and run, click the plus button to set alarm or timer.
 
 - [lolade](https://github.com/lolyparty)
 
-- [Akinlade solomon](https://github.com/solyakin)
+- [Akinlade Solomon](https://github.com/solyakin)
 
 - [Modupe](https://github.com/modupeadeonojobi)
 
