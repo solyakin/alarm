@@ -273,7 +273,7 @@ button {
 
 @media(max-width: 720px){
 
-  body{
+  #blur{
     width: 100vw;
     height: 100vh;
       flex-direction: column;
